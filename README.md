@@ -9,10 +9,10 @@ Simply download the latest version from this repository, set it up using setup.b
 
 ## Planned Future Features:
 
--Set Bot Username
--Send Message to Channel
--Invite Bot to Server
--Collect Reactions
--Add Reaction
--Kick/Ban Member (will require perms)
--Add/Remove Roles (will require perms)
+-Set Bot Username  
+-Send Message to Channel  
+-Invite Bot to Server  
+-Collect Reactions  
+-Add Reaction  
+-Kick/Ban Member (will require perms)  
+-Add/Remove Roles (will require perms)  
