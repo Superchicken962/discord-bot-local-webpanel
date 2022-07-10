@@ -6,9 +6,3 @@ Simply download the latest version from this repository, set it up using setup.b
 Current available features:
 
 -Change Bot Activity
-  \n-PLAYING
-  -WATCHING
-  -LISTENING
-  -STREAMING (Adds URL Field)
-  -COMPETING
- 
