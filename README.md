@@ -12,7 +12,7 @@ Simply download the latest version from this repository, set it up using setup.b
 
 ## Planned Future Features:
 
--Collect Reactions 
+-Collect Reactions  
 -Add Reaction  
 -Kick/Ban Member (will require perms)  
 -Add/Remove Roles (will require perms)  
