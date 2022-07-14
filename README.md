@@ -6,13 +6,13 @@ Simply download the latest version from this repository, set it up using setup.b
 ## Current available features:
 
 -Change Bot Activity
-
-## Planned Future Features:
-
 -Set Bot Username  
 -Send Message to Channel  
 -Invite Bot to Server  
--Collect Reactions  
+
+## Planned Future Features:
+
+-Collect Reactions 
 -Add Reaction  
 -Kick/Ban Member (will require perms)  
 -Add/Remove Roles (will require perms)  
