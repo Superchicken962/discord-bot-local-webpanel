@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discord bot</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <table class="dashboard-items">
+        <tr>
+            <th><h2>Bot Info</h2></th>
+            <th><h2>Guilds</h2></th>
+        </tr>
+        <tr>
+            <td>
+                <div class="dashboard-botinfo">
+                    <p>
+                        <b>Username</b><br><span class="botnametxt"></span><br><br>
+                        <div class="botstatusdiv">
+                            <b>Status</b>
+                            Loading...
+                        </div>
+                        <br><br>
+                        <div class="botactivitydiv">
+                            <b>Activity</b><br><span class="botactivitytxt"></span>
+                        </div>
+                    </p>
+                </div>
+            </td>
+            <td>
+                <div class="dashboard-botguilds">
+                    <div class="guildsdiv">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="guildinfo_panel">
+        <a class="guildinfo_panel_close">X</a>
+        <h2>Guilds</h2>
+        <select class="guildinfo_panel_select"></select>
+    </div>
+    <div class="channelinfo_panel">
+        <a class="channelinfo_panel_close" onclick="closeChannelsPanel()">X</a>
+        <h3 class="channelinfo_guildtitle"></h3>
+        <h2>Channels</h2>
+        <span class="channelinfo_panel_data">
+            <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i><br><br>
+        </span>
+    </div>
+    <br><br>
+    <h1>Options and Commands</h1>
+    <div class="returnresponse"></div><br><br>
+    <a class="command"><h2>Set Status/Activity</h2></a>
+    <div class="command_expanded">
+        <h2>Parameters</h2>
+        <form method="POST">
+
+        <label for="changestatus_statusselector">Status: </label><select name="changestatus_statusselector" class="changestatus_statusselector">
+            <option value="online">Online</option>
+            <option value="idle">Idle</option>
+            <option value="dnd">Do Not Disturb</option>
+            <option value="invisible">Invisible</option>
+        </select>
+        <br><br>
+        
+        <label for="changestatus_selecter">Type: </label><select name="changestatus_selecter" class="changestatus_selecter">
+            <option value="PLAYING">PLAYING</option>
+            <option value="WATCHING">WATCHING</option>
+            <option value="LISTENING">LISTENING TO</option>
+            <option value="STREAMING">STREAMING</option>
+            <option value="COMPETING">COMPETING IN</option>
+        </select>
+        <br><br>
+
+        <div class="changestatus_streamurl_div">
+            <label for="changestatus_streamurl">Stream URL: </label><input name="changestatus_streamurl" class="changestatus_streamurl" type="text"/>
+            <br><br>
+        </div>
+
+        <label for="changestatus_value">Value: </label><input name="changestatus_value" class="changestatus_value" type="text"/>
+        <br><br>
+
+        <button type="button" class="changestatus_savebtn">Save</button>
+        <br><br>
+        </form>
+    </div>
+
+    <br>
+
+    <a class="command"><h2>Set Username</h2></a>
+    <div class="command_expanded">
+        <h2>Parameters</h2>
+        <form method="POST" action="/changeusername">
+            <label for="changeusername_val">New Username: </label><input name="changeusername_val" type="text"/>
+            <br><br>
+            <input type="submit" value="Change"/>
+        </form>
+        <br><br>
+    </div>
+
+    <br>
+
+    <a class="command"><h2>Send Message</h2></a>
+    <div class="command_expanded">
+        <h2>Parameters</h2>
+        <form method="POST">
+            <label class="sendmessage_serverid_label" for="sendmessage_serverid">Server ID: </label><input type="text" name="sendmessage_serverid" class="sendmessage_serverid"/><button type="button" class="sendmessage_saveserver">Set</button>
+            <div class="sendmessage_channelid_div"><label class="sendmessage_channelid_label" for="sendmessage_channelid">Channel ID: </label><input type="text" class="sendmessage_channelid" name="sendmessage_channelid"/><button type="button" class="sendmessage_savechannel">Set</button></div>
+            <div class="sendmessage_message_div"><label class="sendmessage_message_label" for="sendmessage_message">Message: </label><input type="text" class="sendmessage_message" name="sendmessage_message"/><button type="button" class="sendmessage_savemessage">Send</button></div>
+        </form>
+        <br><br>
+    </div>
+
+    <br>
+
+    <a class="command"><h2>Add Bot to Server</h2></a>
+    <div class="command_expanded">
+        <br>
+        <button class="addbot_createlink">Create Link</button>
+        <br>
+        <h2><a class="addbot_responsetxt" target="_blank"></a></h2>
+        <br>
+    </div>
+
+
+
+</body>
+</html>
+<script src="dashboard.js"></script>

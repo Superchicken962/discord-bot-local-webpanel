@@ -1,0 +1,208 @@
+:root {
+    --status_online: rgb(59,165,93);
+    --status_dnd: rgb(237,66,69);
+    --status_idle: rgb(236,159,25);
+    --status_invisible: rgb(116,127,141);
+    --status_streaming: rgb(89,54,149);
+}
+
+body {
+    background-color: rgb(35,35,35);
+    color:white;
+    text-align: center;
+}
+
+.command {
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 25px;
+    margin: auto;
+    display: block;
+    background-color: rgb(60,60,60);
+    cursor: pointer;
+}
+.command:hover {
+    opacity: 0.6;
+}
+.command-active {
+    background-color: rgb(45,45,45);
+}
+
+.command_expanded {
+    display: block;
+    margin: auto;
+    padding: 0 32px;
+    background-color: rgb(40,40,40);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    width: fit-content;
+}
+
+.changestatus_streamurl_div {
+    display: none;
+}
+
+.bot-login-form input[type=text], input[type=password] {
+    width: fit-content;
+}
+
+.returnresponse {
+    display: none;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 1px 25px;
+    position: relative;
+}
+.returnresponse_close {
+    color: red;
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+}
+
+.error_rr_colour {
+    background-color: rgba(200,45,0,0.4);
+    border: 2px solid rgb(255,0,0);
+    color: rgb(255,0,0);
+}
+.success_rr_colour {
+    background-color: rgba(0,200,45,0.4);
+    border: 2px solid rgb(0,255,0);
+    color: rgb(0,255,0);
+}
+
+.sendmessage_channelid_div, .sendmessage_message_div, .invitebot_responsetxt {
+    display: none;
+}
+
+.newupdatebanner_div {
+    display: block;
+    background-color: rgb(15,15,15);
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    z-index: 999;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.updates_info_holder {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 35px 35px;
+    color: white;
+    background-color: rgb(35,35,35);
+}
+
+.dashboard-botguilds, .dashboard-botinfo {
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.dashboard-items {
+    margin: auto;
+}
+
+.botactivitydiv {
+    display: block;
+}
+
+.statuscircle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.online {
+    background-color: var(--status_online)
+}
+.dnd {
+    background-color: var(--status_dnd);
+}
+.idle {
+    background-color: var(--status_idle);
+}
+.invisible {
+    background-color: var(--status_invisible);
+}
+.streaming {
+    background-color: var(--status_streaming);
+}
+
+td {
+    vertical-align:top;
+}
+
+.guildinfo_morebtn {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.guildinfo_panel {
+    display: none;
+    margin: auto;
+    background-color: rgb(20,20,20);
+    color: white;
+    border: none;
+    padding: 5px 25px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 5px 5px 5px black;
+    position: absolute;
+    left:0;
+    right:0;
+    z-index: 999;
+}
+
+.guildinfo_panel_close, .channelinfo_panel_close {
+    top:0;
+    right:0;
+    position: absolute;
+    display: block;
+    color: red;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.guildinfo_panel_note {
+    font-size: 10px;
+}
+
+.guildicon {
+    display: inline;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: none;
+}
+
+.a_btn {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.channelinfo_panel {
+    display: none;
+    margin: auto;
+    background-color: rgb(20,20,20);
+    color: white;
+    border: none;
+    padding: 5px 25px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 5px 5px 5px black;
+    position: absolute;
+    left:0;
+    right:0;
+    z-index: 1000;
+}
