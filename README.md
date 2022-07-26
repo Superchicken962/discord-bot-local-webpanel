@@ -1,6 +1,6 @@
 # discord-bot-local-webpanel
 
-*Current Version: v0.1.0 (Beta Release)*
+*Current Version: v0.1.1 (Beta Release)*
 
 Website to locally host a discord bot without coding experience.
 Simply download the latest version from this repository, set it up using setup.bat, then run it with the file it creates!  
@@ -28,3 +28,11 @@ Simply download the latest version from this repository, set it up using setup.b
 -Add Reaction  
 -Kick/Ban Member (will require perms)  
 -Add/Remove Roles (will require perms)  
+
+## Update Notes
+
+### v0.1.1  
+-New lines now show correctly in update notes
+
+### v0.1.0  
+-First Beta Release  
