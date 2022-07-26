@@ -284,7 +284,7 @@ app.get("/error.html", (req, res) => {
     res.sendFile(path.join(__dirname, "public/dashboard.html"));
 });
 
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 const isLatestVersion = (ver, callback) => {
     request("https://discordbotpanel.cf/data/latestversion.php", (err, res, body) => {
         var isUpToDate;
