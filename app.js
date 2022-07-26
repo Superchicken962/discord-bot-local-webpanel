@@ -309,6 +309,7 @@ isLatestVersion(VERSION, (isit, info) => {
         var date = new Date(parseInt(info.date)*1000);
         var datestring = date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear();
         var timestring = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+        info.info = info.info.replaceAll("{n}", "\n");
         console.log("\n\n[UpdateChecker] There is a new version available! Please find the new version in the github repository here: https://github.com/Superchicken962/discord-bot-local-webpanel\nVersion: "+VERSION+" => "+info.version+"\n\nVersion "+info.version+", released "+datestring+", "+info.info+".\nFor live updates, visit the /updates directory on the webserver.\n");
     } else {
         console.log("[UpdateChecker] All Up to Date! - For live updates, visit the /updates directory on the webserver.\n");

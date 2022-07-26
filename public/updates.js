@@ -15,6 +15,7 @@ req.onload = function() {
         var date = new Date(parseInt(obj.date)*1000);
         var datestring = date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear();
         var timestring = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+        obj.info = obj.info.replaceAll("{n}", "<br>");
         if (obj.isLatest === false) {
             infoholder.innerHTML = "<h1>Update Available!</h1><h2><span title='Your version'>"+obj.currentVer+"</span> => <span title='New version'>"+obj.version+"</span></h2><h3>["+datestring+"]<br>"+obj.info+"</h3><p>Download from the github repository <a href='https://discordbotpanel.cf/githubrepo' target='_blank'>here</a></p><br><a href='../dashboard'>return to dashboard</a>";
             maindiv.append(infoholder);
