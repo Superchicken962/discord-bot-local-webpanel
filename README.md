@@ -24,8 +24,8 @@ Simply download the latest version from this repository, set it up using setup.b
 
 ## Planned Future Features:
 
--Custom commands import
--Preset commands to enable / disable
+-Custom commands import  
+-Preset commands to enable / disable  
 -Collect Reactions  
 -Add Reaction  
 -Kick/Ban Member (will require perms)  
