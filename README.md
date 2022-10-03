@@ -6,6 +6,8 @@ Website to locally host a discord bot without coding experience.
 Simply download the latest version from this repository, set it up using setup.bat, then run it with the file it creates!  
 *A Guide to installing and using app will be coming soon...*
 
+*You are responsible for everything that you do while using this website*
+
 ## What you will need:
 
 -[Node.js](https://nodejs.org/en/download/)  
