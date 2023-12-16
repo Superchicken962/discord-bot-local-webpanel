@@ -1,5 +1,7 @@
 # discord-bot-local-webpanel
 
+This is a dead project. I am unsure whether I will ever come back and continue working on this.
+
 *Current Version: v0.1.1 (Beta Release)*
 
 Website to locally host a discord bot without coding experience.
